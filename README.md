@@ -1,0 +1,4 @@
+hooks
+=====
+
+Generic events dispatcher
