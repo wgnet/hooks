@@ -1,0 +1,9 @@
+{application, hooks,
+ [
+  {description, ""},
+  {vsn, "0.0.1"},
+  {registered, []},
+  {applications, []},
+  {mod, {hooks_app, []} },
+  {env, []}
+ ]}.
