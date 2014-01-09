@@ -50,7 +50,8 @@ hook_dispatcher_function( HookIDs ) ->
 
 
 -spec hook_function_name( term() ) -> atom().
-hook_function_name( HookID ) -> list_to_atom([ $h | integer_to_list( erlang:phash2( HookID ) ) ]).
+% hook_function_name( HookID ) -> list_to_atom([ $h | integer_to_list( erlang:phash2( HookID ) ) ]).
+hook_function_name( HookID ) -> list_to_atom(lists:flatten(io_lib:format( "#[~p]", [ HookID ] ))).
 
 -spec hook_function_form( term(), [ {mfa, atom(), atom(), [ term() ]} ] ) -> term().
 hook_function_form( HookID, Handlers ) ->
