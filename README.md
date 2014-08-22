@@ -14,6 +14,7 @@ API
 
 
 `-spec hooks:add_handler(HookID, {mfa, M, F, A}, Priority) -> ok.`
+
 `-spec hooks:remove_handler(HookID, {mfa, M, F, A}, Priority) -> ok.`
 
 `-spec hooks:run(HookID, AccIn, ConstArgs :: [ term() ] ) -> AccOut.`
