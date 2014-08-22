@@ -35,7 +35,7 @@
 ]).
 
 -record(s, {
-		auto_rebuild_all = false :: boolean()
+		auto_rebuild_all = true :: boolean()
 	}).
 
 -spec start_link() -> {ok, pid()}.
